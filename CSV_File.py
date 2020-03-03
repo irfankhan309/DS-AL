@@ -1,3 +1,12 @@
+# creating zip file fromm files io
+from zipfile import *
+f = ZipFile('All_Files.zip','w',ZIP_DEFLATED)
+f.write('heros.txt')
+f.write('company.txt')
+f.write('cricketer.txt')
+f.close()
+print('zip file is created.....')
+
 # comma seperated values
 # import csv
 # with open('emp.csv','w',newline='') as f:
@@ -29,10 +38,7 @@
 # transportation time will be reduced
 # import perfomance
 # we have zipfile module and classs name is ZipFile
-# f =ZipFile('files.zip','w','ZIP_DEFLATED')
-
-
-
+# f =ZipFile('files.zip','w','ZIP_DEFLATED'
 
 
 
